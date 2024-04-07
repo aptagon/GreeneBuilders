@@ -56,7 +56,6 @@ export const SliderComp = ({
                     text={item.title}
                     subText={item.subTitle}
                     borderRadius={"10px"}
-                    height={"20rem"}
                   />
                 </div>
               ))}

@@ -24,7 +24,7 @@ export default function Navbar() {
     return (
         <>
             <nav className={`navbar fixed-top navbar-expand-lg navbar-light bg-white ${isScrolled ? 'scrolled' : ''}`}>
-                <div className='container'>
+                <div className='container-fluid'>
                     <div className="row width-100">
                         <div className="col-md-3">
                             <a className="navbar-brand" href="/">
