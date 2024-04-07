@@ -21,7 +21,7 @@ export default function Banner() {
                                             smooth={true}
                                             offset={-70} // Adjust offset as needed
                                             duration={500}
-                                        >Our Services <img src={icon} alt="" width="20px" /></Link>
+                                        >Our Service <img src={icon} alt="" width="20px" /></Link>
                                         <Link
                                             className="btn btn-primary"
                                             to="contact-section"
