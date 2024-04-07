@@ -583,19 +583,132 @@ hr {
   text-align: center;
   width: 100%;
 }
-@media screen and (min-width:1980px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .excellence-section {
+    position: relative;
+    top: 10px;
+    margin: 0;
+  }
+  .navbar.scrolled {
+    height: auto;
+  }
+   .banner {
+    height: 68vw;
+    text-align: center;
+  }
+  .banner::before {
+    background: linear-gradient(to right, rgba(34, 139, 34, 0.9), rgba(234, 244, 234, 0.3), rgba(0, 0, 0, 0.3));
+  }
+ 
+  .banner-text {
+    padding: 1vw 1vw 4vw 1vw;
+  }
+  .banner-heading {
+    font-size: 40px;
+  }
+  .experience-section .counter h6 {
+    padding: 1rem;
+  }
+  .mission-choose .mission, .mission-choose .choose {
+    padding: 2rem 2.5rem 2rem;
+    text-align: center;
+  }
+  .steps h6 {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .line li {
+    margin: 0 4.6em;
+  }
+  .contact h3 {
+    font-size: 26px;
+  }
+  .contact li {
+    font-size: 12px;
+  }
+  .contact {
+    height: 152vw;
+  }
+  .contact-info, .qoute-form {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  .blog-bg {
+    display: none;
+  }
+  button.navbar-toggler {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+  } 
+  .nav-item.active a {
+    border-bottom: unset;
+  }
+  li.nav-item {
+    margin: 2% 1vw;
+  }
+  ul.navbar-nav.mr-auto {
+    margin-top: 5em;
+    position: relative;
+    left: -24vw;
+  }
+  .banner {
+    height: 70vw;
+    text-align: center;
+  }
+  .blog-bg {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner-heading {
+    font-size: 38px;
+  }
+  .banner-text {
+    font-size: 16px;
+  }
+  .excellence-section {
+    top: 22vw;
+  }
+  .experience-section .counter h6 {
+    padding: 1rem;
+  }
+  .line li {
+    margin: 0 6.5em;
+  }
+  .steps h6 {
+    font-size: 16px;
+  }
+  .contact h3 {
+    font-size: 26px;
+  }
+  .contact li {
+    font-size: 14px;
+  }
+  .contact ul li img {
+    margin: 4px 8px 7px 20px;
+  }
+  .contact {
+    height: 74vw;
+  }
+  .blog-bg {
+    height: 38vw;
+  }
+}
+
+@media (min-width:1401px) and (max-width: 1500px) {
   nav .container-fluid {
-    padding: 0 6%;
+    padding: 0 5.5%;
   }
   .navbar-brand img {
     width: 11rem;
     padding-top: 9px;
   }
   .nav-link {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
   li.nav-item {
-    margin: 4.4% 1vw;
+    margin: 4.8% 1vw;
   }
   .d-lg-block .btn.btn-default {
     margin-top: 7%;
@@ -605,19 +718,15 @@ hr {
     font-size: 20px;
     border-radius: 15px;
   }
-  .navbar.scrolled .btn.btn-default {
-    margin-top: 4%;
-  }
   .banner {
     height: 46vw;
   }
   .banner-heading {
-    font-size: 70px;
+    font-size: 52px;
     font-weight: 600;
     padding: 2vw;
   }
   .banner-text {
-    z-index: 1;
     padding: 0vw 12vw 1vw 2vw;
   }
   .banner .btn.btn-default {
@@ -630,44 +739,45 @@ hr {
   .banner .btn.btn-default, .banner .btn.btn-primary {
     margin-top: 6%;
     height: 62%;
-    font-size: 26px;
+    font-size: 22px;
     border-radius: 15px;
     padding: 1%;
   }
   .excellence-section {
-    top: 76%;
+    top: 75%;
     width: inherit;
+    border-radius: 15px;
   }
   .excellence-section h4 {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
   }
   .excellence-section p {
     font-size: 16px;
-    padding: 0px 38px;
+    padding: 0px 20px;
     line-height: 1.7;
   }
   .experience-section .counter-exp {
-    font-size: 48px;
+    font-size: 40px;
     margin-top: -2%;
   }
   .experience-section .counter h6 {
     padding: 1rem;
-    font-size: 18px;
+    font-size: 16px;
   }
   .experience-section .counter {
-    margin-left: 12%;
+    margin-left: 10%;
   }
   .experience-section .yrs-heading, .experience-section .exp-heading {
     font-size: 48px;
   }
   .exp-section-right p {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.4;
     margin-top: 3rem;
   }
   .mission-choose {
-    padding: 1% 14%;
+    padding: 1% 8%;
   }
   .mission-choose .mission h6, .mission-choose .choose h6 {
     font-weight: 700;
@@ -680,48 +790,23 @@ hr {
     font-size: 2.9rem;
   }
   .service-two p, .service-three p, .service-four p {
-    font-size: 22px;
+    font-size: 18px;
+    margin-bottom: 20%;
   }
   .service-one, .service-two, .service-three, .service-four {
     padding: 3rem !important;
   }
   .service-one a.btn.services-btn, .service-two a.btn.services-btn, .service-three a.btn.services-btn, .service-four a.btn.services-btn {
-    padding: 4% 8%;
+    padding: 4% 6%;
   }
   .services-btn img {
     width: 1.5rem;
   }
-  .projects .bg-image-container {
-    height: 26rem;
-  }
-  .projects .text-container {
-    font-size: 22px;
-  }
   .contact {
-    height: 40vw;
-  }
-  .blog-bg {
-    height: 25vw;
-    padding: 5vw;
-  }
-  .blog-bg h4 {
-    font-size: 28px;
-  }
-  .blog-bg .text-bottom {
-    font-size: 18px;
-    top: 15rem;
-  }
-  .contact h3 {
-    font-size: 50px;
-  }
-  .contact li {
-    font-size: 30px;
-  }
-  .contact ul li img {
-    width: 24px;
+    height: 50vw;
   }
   .blog h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .info h5 {
     font-size: 22px;
@@ -729,8 +814,149 @@ hr {
   .info p {
     font-weight: 600;
   }
+  .blog-bg {
+    height: 31vw;
+    padding: 5vw;
+  }
+  .blog-bg h4 {
+    font-size: 28px;
+  }
+  .blog-bg .text-bottom {
+    font-size: 18px;
+    top: 16rem;
+  }
 }
-@media screen and (min-width:1800px) and (max-width: 1979px) {
+@media only screen and (min-width:1520px)  {
+  nav .container-fluid {
+    padding: 0 5.5%;
+  }
+  .navbar-brand img {
+    width: 11rem;
+    padding-top: 9px;
+  }
+  .nav-link {
+    font-size: 20px !important;
+  }
+  li.nav-item {
+    margin: 4.8% 1vw;
+  }
+  .d-lg-block .btn.btn-default {
+    margin-top: 7%;
+    margin-left: 34%;
+    width: 88%;
+    height: 62%;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  .banner {
+    height: 46vw;
+  }
+  .banner-heading {
+    font-size: 52px;
+    font-weight: 600;
+    padding: 2vw;
+  }
+  .banner-text {
+    padding: 0vw 12vw 1vw 2vw;
+  }
+  .banner .btn.btn-default {
+    margin-left: 3%;
+    width: 26%;
+  }
+  .banner .btn.btn-primary {
+    width: 22%;
+  }
+  .banner .btn.btn-default, .banner .btn.btn-primary {
+    margin-top: 6%;
+    height: 62%;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 1%;
+  }
+  .excellence-section {
+    top: 70%;
+    width: inherit;
+    border-radius: 15px;
+  }
+  .excellence-section h4 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .excellence-section p {
+    font-size: 16px;
+    padding: 0px 20px;
+    line-height: 1.7;
+  }
+  .experience-section .counter-exp {
+    font-size: 40px;
+    margin-top: -2%;
+  }
+  .experience-section .counter h6 {
+    padding: 1rem;
+    font-size: 16px;
+  }
+  .experience-section .counter {
+    margin-left: 10%;
+  }
+  .experience-section .yrs-heading, .experience-section .exp-heading {
+    font-size: 48px;
+  }
+  .exp-section-right p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 3rem;
+  }
+  .mission-choose {
+    padding: 1% 8%;
+  }
+  .mission-choose .mission h6, .mission-choose .choose h6 {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .mission-choose .mission p, .mission-choose .choose p {
+    font-size: 18px;
+  }
+  .service-three h3, .service-four h3 {
+    font-size: 2.9rem;
+  }
+  .service-two p, .service-three p, .service-four p {
+    font-size: 18px;
+    margin-bottom: 20%;
+  }
+  .service-one, .service-two, .service-three, .service-four {
+    padding: 3rem !important;
+  }
+  .service-one a.btn.services-btn, .service-two a.btn.services-btn, .service-three a.btn.services-btn, .service-four a.btn.services-btn {
+    padding: 4% 6%;
+  }
+  .services-btn img {
+    width: 1.5rem;
+  }
+  .contact {
+    height: 50vw;
+  }
+  .blog h1 {
+    font-size: 3rem;
+  }
+  .info h5 {
+    font-size: 22px;
+  }
+  .info p {
+    font-weight: 600;
+  }
+  .blog-bg {
+    height: 31vw;
+    padding: 5vw;
+  }
+  .blog-bg h4 {
+    font-size: 28px;
+  }
+  .blog-bg .text-bottom {
+    font-size: 18px;
+    top: 16rem;
+  }
+}
+@media only screen and (min-width:1800px) and (max-width: 1979px) {
   nav .container-fluid {
     padding: 0 6%;
   }
@@ -878,19 +1104,19 @@ hr {
     font-weight: 600;
   }
 }
-@media screen and (min-width:1519px) and (max-width: 1600px) {
+@media only screen and (min-width:1980px) {
   nav .container-fluid {
-    padding: 0 5.5%;
+    padding: 0 6%;
   }
   .navbar-brand img {
     width: 11rem;
     padding-top: 9px;
   }
   .nav-link {
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
   li.nav-item {
-    margin: 4.8% 1vw;
+    margin: 4.4% 1vw;
   }
   .d-lg-block .btn.btn-default {
     margin-top: 7%;
@@ -900,15 +1126,19 @@ hr {
     font-size: 20px;
     border-radius: 15px;
   }
+  .navbar.scrolled .btn.btn-default {
+    margin-top: 4%;
+  }
   .banner {
-    height: 46vw;
+    height: 40vw;
   }
   .banner-heading {
-    font-size: 52px;
+    font-size: 70px;
     font-weight: 600;
     padding: 2vw;
   }
   .banner-text {
+    z-index: 1;
     padding: 0vw 12vw 1vw 2vw;
   }
   .banner .btn.btn-default {
@@ -921,45 +1151,44 @@ hr {
   .banner .btn.btn-default, .banner .btn.btn-primary {
     margin-top: 6%;
     height: 62%;
-    font-size: 22px;
+    font-size: 26px;
     border-radius: 15px;
     padding: 1%;
   }
   .excellence-section {
-    top: 68%;
+    top: 82%;
     width: inherit;
-    border-radius: 15px;
   }
   .excellence-section h4 {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 600;
   }
   .excellence-section p {
     font-size: 16px;
-    padding: 0px 20px;
+    padding: 0px 38px;
     line-height: 1.7;
   }
   .experience-section .counter-exp {
-    font-size: 40px;
+    font-size: 48px;
     margin-top: -2%;
   }
   .experience-section .counter h6 {
     padding: 1rem;
-    font-size: 16px;
+    font-size: 18px;
   }
   .experience-section .counter {
-    margin-left: 10%;
+    margin-left: 12%;
   }
   .experience-section .yrs-heading, .experience-section .exp-heading {
     font-size: 48px;
   }
   .exp-section-right p {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.4;
     margin-top: 3rem;
   }
   .mission-choose {
-    padding: 1% 8%;
+    padding: 1% 14%;
   }
   .mission-choose .mission h6, .mission-choose .choose h6 {
     font-weight: 700;
@@ -972,32 +1201,28 @@ hr {
     font-size: 2.9rem;
   }
   .service-two p, .service-three p, .service-four p {
-    font-size: 18px;
-    margin-bottom: 20%;
+    font-size: 22px;
   }
   .service-one, .service-two, .service-three, .service-four {
     padding: 3rem !important;
   }
   .service-one a.btn.services-btn, .service-two a.btn.services-btn, .service-three a.btn.services-btn, .service-four a.btn.services-btn {
-    padding: 4% 6%;
+    padding: 4% 8%;
   }
   .services-btn img {
     width: 1.5rem;
   }
-  .contact {
-    height: 50vw;
+  .projects .bg-image-container {
+    height: 26rem;
   }
-  .blog h1 {
-    font-size: 3rem;
-  }
-  .info h5 {
+  .projects .text-container {
     font-size: 22px;
   }
-  .info p {
-    font-weight: 600;
+  .contact {
+    height: 40vw;
   }
   .blog-bg {
-    height: 31vw;
+    height: 25vw;
     padding: 5vw;
   }
   .blog-bg h4 {
@@ -1005,137 +1230,25 @@ hr {
   }
   .blog-bg .text-bottom {
     font-size: 18px;
-    top: 16rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  /* .nav-link {
-    font-size: 18px !important;
-  } */
-  /* .blog-bg {
-    height: 33vw;
-  } */
-  .main-menu {
-    padding-left: 4% !important;
-  }
-  .btn.btn-default {
-    margin-top: 1.5vw;
-  }
-  .line li {
-      margin: 0 9.3em;
-    }
-}
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .banner-heading {
-    font-size: 38px;
-  }
-  .banner-text {
-    font-size: 16px;
-  }
-  .excellence-section {
-    top: 22vw;
-  }
-  .experience-section .counter h6 {
-    padding: 1rem;
-  }
-  .line li {
-    margin: 0 6.5em;
-  }
-  .steps h6 {
-    font-size: 16px;
+    top: 15rem;
   }
   .contact h3 {
-    font-size: 26px;
+    font-size: 50px;
   }
   .contact li {
-    font-size: 14px;
+    font-size: 30px;
   }
   .contact ul li img {
-    margin: 4px 8px 7px 20px;
+    width: 24px;
   }
-  .contact {
-    height: 74vw;
+  .blog h1 {
+    font-size: 3.5rem;
   }
-  .blog-bg {
-    height: 38vw;
+  .info h5 {
+    font-size: 22px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .excellence-section {
-    position: relative;
-    top: 10px;
-    margin: 0;
-  }
-  .navbar.scrolled {
-    height: auto;
-  }
-   .banner {
-    height: 68vw;
-    text-align: center;
-  }
-  .banner::before {
-    background: linear-gradient(to right, rgba(34, 139, 34, 0.9), rgba(234, 244, 234, 0.3), rgba(0, 0, 0, 0.3));
-  }
- 
-  .banner-text {
-    padding: 1vw 1vw 4vw 1vw;
-  }
-  .banner-heading {
-    font-size: 40px;
-  }
-  .experience-section .counter h6 {
-    padding: 1rem;
-  }
-  .mission-choose .mission, .mission-choose .choose {
-    padding: 2rem 2.5rem 2rem;
-    text-align: center;
-  }
-  .steps h6 {
-    font-size: 12px;
-    line-height: 1.8;
-  }
-  .line li {
-    margin: 0 4.6em;
-  }
-  .contact h3 {
-    font-size: 26px;
-  }
-  .contact li {
-    font-size: 12px;
-  }
-  .contact {
-    height: 152vw;
-  }
-  .contact-info, .qoute-form {
-    margin-top: 2rem;
-    padding: 0;
-  }
-  .blog-bg {
-    display: none;
-  }
-  button.navbar-toggler {
-    position: absolute;
-    right: 25px;
-    top: 10px;
-  } 
-  .nav-item.active a {
-    border-bottom: unset;
-  }
-  li.nav-item {
-    margin: 2% 1vw;
-  }
-  ul.navbar-nav.mr-auto {
-    margin-top: 5em;
-    position: relative;
-    left: -24vw;
-  }
-  .banner {
-    height: 70vw;
-    text-align: center;
-  }
-  .blog-bg {
-    display: none;
+  .info p {
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 767px) {
