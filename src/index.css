@@ -160,7 +160,7 @@ li.nav-item {
   margin-top: 1rem;
 }
 .excellence-section p {
-  font-family: 'Merriweather';
+  font-family: 'Lato';
     font-size: 13px;
     padding: 0 32px;
 }
@@ -228,7 +228,7 @@ li.nav-item {
   font-size: 18px;
 }
 .mission-choose .mission p, .mission-choose .choose p {
-  font-family: Merriweather;
+  font-family: Lato;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 16px;
@@ -268,7 +268,7 @@ li.nav-item {
 }
 .service-two p, .service-three p, .service-four p {
   font-family: Lato;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
 }
 .service-two a.btn.services-btn, .service-three a.btn.services-btn, .service-four a.btn.services-btn {
@@ -452,7 +452,7 @@ li.nav-item {
 .contact h3 {
   color: rgba(45, 49, 59, 1);
   font-weight: 600;
-  font-size: 38px;
+  font-size: 40px;
 }
 .contact h3, .contact ul {
   font-family: 'poppins';
@@ -483,8 +483,22 @@ li.nav-item {
   padding: 2em !important;
   border-radius: 15px;
 }
+.form-thanks h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #FFF !important;
+  margin-bottom: 5%;
+}
+.form-thanks p {
+  text-align: center;
+  padding: 0px 4%;
+}
+.form-thanks {
+  padding: 20% 0;
+}
 .qoute-form h4 {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 .qoute-form p {
@@ -499,8 +513,8 @@ li.nav-item {
   border-color: rgba(45, 49, 59, 1) !important;
 }
 .contact-info h5 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   font-family: 'Poppins';
   margin-bottom: 18px;
 }
@@ -787,7 +801,7 @@ hr {
     font-size: 18px;
   }
   .service-three h3, .service-four h3 {
-    font-size: 2.9rem;
+    font-size: 30px;
   }
   .service-two p, .service-three p, .service-four p {
     font-size: 18px;
@@ -806,7 +820,7 @@ hr {
     height: 50vw;
   }
   .blog h1 {
-    font-size: 3rem;
+    font-size: 40px;
   }
   .info h5 {
     font-size: 22px;
@@ -917,7 +931,7 @@ hr {
     font-size: 18px;
   }
   .service-three h3, .service-four h3 {
-    font-size: 2.9rem;
+    font-size: 30px;
   }
   .service-two p, .service-three p, .service-four p {
     font-size: 18px;
@@ -936,7 +950,7 @@ hr {
     height: 50vw;
   }
   .blog h1 {
-    font-size: 3rem;
+    font-size: 40px;
   }
   .info h5 {
     font-size: 22px;
@@ -1051,7 +1065,7 @@ hr {
     font-size: 18px;
   }
   .service-three h3, .service-four h3 {
-    font-size: 2.9rem;
+    font-size: 35px;
   }
   .service-two p, .service-three p, .service-four p {
     font-size: 22px;
@@ -1095,7 +1109,7 @@ hr {
     width: 24px;
   }
   .blog h1 {
-    font-size: 3.5rem;
+    font-size: 45px;
   }
   .info h5 {
     font-size: 22px;
@@ -1198,7 +1212,7 @@ hr {
     font-size: 18px;
   }
   .service-three h3, .service-four h3 {
-    font-size: 2.9rem;
+    font-size: 35px;
   }
   .service-two p, .service-three p, .service-four p {
     font-size: 22px;
@@ -1242,7 +1256,7 @@ hr {
     width: 24px;
   }
   .blog h1 {
-    font-size: 3.5rem;
+    font-size: 45px;
   }
   .info h5 {
     font-size: 22px;

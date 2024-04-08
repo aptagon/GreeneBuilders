@@ -4,7 +4,7 @@ export default function Footer () {
     return (
         <>
             <footer className="text-center text-lg-start footer">
-                <section className="d-flex p-4 border-bottom container">
+                <section className="d-flex pt-4 pb-4 pl-0 border-bottom container">
                     <div className="d-flex justify-content-left">
                         <a href="/" className="me-3"><FontAwesomeIcon icon={faFacebook} size="xl" /></a>
                         <a href="/" className="me-3 text-reset"><FontAwesomeIcon icon={faInstagram} size="xl" /></a>
