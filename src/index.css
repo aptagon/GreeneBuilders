@@ -709,7 +709,7 @@ hr {
   }
 }
 
-@media only screen and (min-width:1515px) {
+@media only screen and (min-width:1512px) {
   nav .container-fluid {
     padding: 0 5.5%;
   }
@@ -735,10 +735,10 @@ hr {
     height: 54vw;
   }
   .banner-heading {
-    font-size: 52px;
+    font-size: 58px;
     font-weight: 600;
-    padding: 2vw;
-  }
+    padding: 4vw 2vw 3vw;
+}
   .banner-text {
     padding: 0vw 12vw 1vw 2vw;
   }
