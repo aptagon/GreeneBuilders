@@ -282,7 +282,6 @@ li.nav-item {
 }
 .service-three a.btn.services-btn {
   background: rgba(45, 49, 59, 1);
-  bottom: -6%;
   position: relative;
 }
 .services-btn img {
@@ -710,7 +709,7 @@ hr {
   }
 }
 
-@media (min-width:1401px) and (max-width: 1500px) {
+@media only screen and (min-width:1515px) {
   nav .container-fluid {
     padding: 0 5.5%;
   }
@@ -733,7 +732,7 @@ hr {
     border-radius: 15px;
   }
   .banner {
-    height: 46vw;
+    height: 54vw;
   }
   .banner-heading {
     font-size: 52px;
@@ -840,7 +839,7 @@ hr {
     top: 16rem;
   }
 }
-@media only screen and (min-width:1520px)  {
+/* @media only screen and (min-width:1520px)  {
   nav .container-fluid {
     padding: 0 5.5%;
   }
@@ -969,7 +968,7 @@ hr {
     font-size: 18px;
     top: 16rem;
   }
-}
+} */
 @media only screen and (min-width:1800px) and (max-width: 1979px) {
   nav .container-fluid {
     padding: 0 6%;

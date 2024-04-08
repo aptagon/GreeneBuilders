@@ -21,19 +21,20 @@ export default function Contact () {
                                 <h5>Contact Info</h5>
                                 <h6>Our Location</h6>
                                 <p>
-                                    18 Office Park Building 21th Floor Unit C. Jl. TB Simatupang Kav. 18,
-                                     Jakarta Selatan ,12520
+                                    1503 Citrine Trail, Tarpon Springs 34689
+                                    <br />
                                 </p>
                                 <h6>Quick Contact</h6>
-                                <p>Call Us : (+62) 877-2469-7246<br/>
-                                    Email   : contact@jhontraktor.co
+                                <p>Call Us : (+1) 727-243-1170<br/>
+                                    Email   : jerri@greenebuilders.net
                                 </p>
+                                    <br />
                                 <h6>Opening Hours</h6>
                                 <p>Monday - Friday<br/>
                                 09:00 AM - 06:00 PM
                                 </p>
                                 <p className="question">Do You Have Any Question, Just Contact Us To Get Help!</p>
-                                <button type="submit" className="btn btn-default w-100 mt-3">Contact Us</button>
+                                <a href='tel:+1727-243-1170' type="submit" className="btn btn-default w-100 mt-3">Contact Us</a>
 
                             </div>
                         </div>
