@@ -709,6 +709,11 @@ hr {
     height: 38vw;
   }
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .contact {
+    height: 118vh;
+  }
+}
 /* @media only screen and (min-width:1512px) {
   nav .container-fluid {
     padding: 0 5.5%;
