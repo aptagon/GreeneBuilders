@@ -84,7 +84,7 @@ li.nav-item {
   background-image: url('assets/images/main-banner.png');
   background-size: cover;
   background-position: center;
-  height: 74vh;
+  height: 80vh;
   position: relative;
   padding: 6vw;
   color:#FFF;
@@ -434,7 +434,7 @@ li.nav-item {
   background-image: url('assets/images/contact.png');
   background-size: cover;
   background-position: center;
-  height: 118vh;
+  height: 95vh;
   position: relative;
   padding: 4vw;
   color:#FFF;
@@ -944,7 +944,7 @@ hr {
     width: 1.5rem;
   }
   .contact {
-    height: 50vw;
+    height: 95vh;
   }
   .blog h1 {
     font-size: 40px;
