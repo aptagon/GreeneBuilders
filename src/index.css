@@ -84,7 +84,7 @@ li.nav-item {
   background-image: url('assets/images/main-banner.png');
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 74vh;
   position: relative;
   padding: 6vw;
   color:#FFF;
@@ -597,6 +597,7 @@ hr {
   text-align: center;
   width: 100%;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .excellence-section {
     position: relative;
@@ -708,14 +709,14 @@ hr {
   }
 }
 
-@media only screen 
-  and (min-device-width: 1512px) /* Minimum MacBook screen width */
-  and (max-device-width: 1519px) /* Maximum MacBook screen width */ {
-    .banner-heading {
-      font-size: 48px;
-      font-weight: 600;
-      padding: 2vw;
+@media screen and (min-width: 1512px) and (max-width: 1512px) and (min-height: 900px) and (max-height: 1000px) {
+  .contact {
+    height: 95vh;
   }
+  .excellence-section {
+    top: 63vh;
+  }
+  
 }
 /* @media only screen and (min-width:1512px) {
   nav .container-fluid {
@@ -849,25 +850,27 @@ hr {
     padding: 0 5.5%;
   }
   .navbar-brand img {
-    width: 11rem;
+    width: 8.5rem;
+    padding-bottom: 2px;
     padding-top: 9px;
   }
   .nav-link {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   li.nav-item {
-    margin: 4.8% 1vw;
+    margin: 3.5% 1vw;
   }
   .d-lg-block .btn.btn-default {
     margin-top: 7%;
-    margin-left: 34%;
-    width: 88%;
-    height: 62%;
-    font-size: 20px;
+    margin-left: 22%;
+    width: 76%;
+    font-size: 18px;
     border-radius: 15px;
+    padding: 4%;;
   }
   .banner {
-    height: 46vw;
+    height: 90vh;
+    margin: 4rem;
   }
   .banner-heading {
     font-size: 52px;
