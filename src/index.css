@@ -276,6 +276,7 @@ li.nav-item {
   float: right;
   clear: both;
   margin-right: 2rem;
+  display: none;
 }
 .service-two a.btn.services-btn, .service-four a.btn.services-btn {
   background: rgba(34, 139, 34, 1);
@@ -708,16 +709,6 @@ hr {
     height: 38vw;
   }
 }
-
-@media screen and (min-width: 1512px) and (max-width: 1512px) and (min-height: 900px) and (max-height: 1000px) {
-  .contact {
-    height: 95vh;
-  }
-  .excellence-section {
-    top: 63vh;
-  }
-  
-}
 /* @media only screen and (min-width:1512px) {
   nav .container-fluid {
     padding: 0 5.5%;
@@ -870,7 +861,6 @@ hr {
   }
   .banner {
     height: 90vh;
-    margin: 4rem;
   }
   .banner-heading {
     font-size: 52px;
