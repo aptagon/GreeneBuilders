@@ -13,8 +13,7 @@ export const FullWidthBgImage = ({
       >
         <div className="gradient">
           <div className="text-container">
-            <div className="body">{text}</div>
-            <div className="label">{subText}</div>
+            <div className="body text-center">{subText}</div>
           </div>
         </div>
       </div>

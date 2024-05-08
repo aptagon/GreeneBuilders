@@ -36,13 +36,6 @@ export default function Experience () {
                 </div>
             </div>
             <div className="row mission-choose" style={rowStyle}>
-                <div className="col-lg-5 col-md-12 mission">
-                    <h6>Mission Statement</h6>
-                    <p>
-                        Our mission to provide innovative construction solutions, exceptional craftsmanship,
-                        and unparalleled customer service.
-                    </p>
-                </div> 
                 <div className="col-lg-5 col-md-12 choose">
                     <h6>Why Choose Us</h6>
                     <p>

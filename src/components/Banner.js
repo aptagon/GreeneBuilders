@@ -11,7 +11,7 @@ export default function Banner() {
                 <div className="banner">
                     <div className="row">
                         <div className="col-lg-7 col-md-12">
-                            <h1 className="banner-heading">Home with Comfort, Built on Trust <span style={spanStyle}>Delivered with</span> Certainty</h1>
+                            <h1 className="banner-heading">Where Dreams Take <br/>Shape, One Home at a Time</h1>
                             <div className="banner-text">Building Your Future - Renovating, Inspecting, and Customizing Your Dream Home with GreeneBuilders Inc</div>
                             <div className="banner-button">
                                         <Link

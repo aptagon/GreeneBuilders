@@ -29,32 +29,6 @@ export default function Services() {
                     </div>
                 </div>
                 <br />
-                <div className="row steps text-center">
-                    <div className="col-md-3">
-                        <h6>Evaluation And Signing <br />Of The Contract</h6>
-                        <p>Step 1</p>
-                    </div>
-                    <div className="col-md-3">
-                        <h6>Evaluation And Signing <br />Of The Contract</h6>
-                        <p>Step 2</p>
-                    </div>
-                    <div className="col-md-3">
-                        <h6>Implementation Of<br /> Quality Works</h6>
-                        <p>Step 3</p>
-                    </div>
-                    <div className="col-md-3">
-                        <h6>Delivering The Project <br />To The Customer</h6>
-                        <p>Step 4</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>      
-                </div>
             </div>
         </>
     );
