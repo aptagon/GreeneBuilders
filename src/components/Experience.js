@@ -39,7 +39,7 @@ export default function Experience () {
                 <div className="col-lg-5 col-md-12 choose">
                     <h6>Why Choose Us</h6>
                     <p>
-                        Key reasons why clients should choose Building Futures for their renovation
+                        Key reasons why clients should choose Greene Builders for their renovation
                         and construction needs, including our attention to detail, personalized approach,
                         and commitment to sustainability.
                     </p>

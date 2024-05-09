@@ -29,7 +29,7 @@ export default function Banner() {
                                             smooth={true}
                                             offset={-70} // Adjust offset as needed
                                             duration={500}
-                                        >Get Qoute</Link>
+                                        >Get Quote</Link>
                                 {/* <a href="/" className="btn btn-default">Our Services <img src={icon} alt="" width="20px" /></a>
                                 <a href="/" className="btn btn-primary">Get Qoute</a> */}
                             </div>
