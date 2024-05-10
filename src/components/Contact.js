@@ -13,25 +13,16 @@ export default function Contact () {
                 </ul> */}
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-7 col-md-12 qoute-form">
+                        <div className="col-lg-8 col-md-12 qoute-form">
                             <ContactForm />
                         </div>
-                        <div className="col-lg-5 col-md-12">
-                            <div className="contact-info">
+                        <div className="col-lg-4 col-md-12 d-flex">
+                            <div className="contact-info align-self-lg-center">
                                 <h5>Contact Info</h5>
-                                {/* <h6>Our Location</h6>
-                                <p>
-                                    1503 Citrine Trail, Tarpon Springs 34689
-                                    <br />
-                                </p> */}
-                                <br />
-                                <br /><br /><br />
-                                <h6>Quick Contact</h6>
                                 <p>Call Us : (+1) 727-243-1170<br/>
                                     Email   : jerri@greenebuilders.net
                                 </p>
-                                    <br />
-                                    <br /><br /><br />
+                                    
                                 <p className="question">Do You Have Any Question, Just Contact Us To Get Help!</p>
                                 <a href='tel:+1727-243-1170' type="submit" className="btn btn-default w-100 mt-3">Contact Us</a>
 

@@ -12,7 +12,7 @@ export default function Banner() {
                     <div className="row">
                         <div className="col-lg-7 col-md-12">
                             <h1 className="banner-heading">Where Dreams Take <br/>Shape, One Home at a Time</h1>
-                            <div className="banner-text">Building Your Future - Renovating, Inspecting, and Customizing Your Dream Home with GreeneBuilders Inc</div>
+                            <div className="banner-text">Building Your Future - Renovating, Inspecting, and Customizing Your Dream Home with Greene Builders Inc</div>
                             <div className="banner-button">
                                         <Link
                                             className="btn btn-default"
@@ -37,7 +37,7 @@ export default function Banner() {
                         <div className="col-lg-4 col-md-12">
                             <div className="excellence-section">
                                 <h4>Excellence in Renovation & Construction</h4>
-                                <p>At GreeneBuilders Inc., we're evolving to meet the diverse needs of our 
+                                <p>At Greene Builders Inc., we're evolving to meet the diverse needs of our 
                                     Florida communities. With over 40 years of excellence in constructing over 2,000 
                                     homes, we are proud to introduce our expanded services. Now, alongside building
                                     your perfect home, we offer comprehensive renovation and building inspection

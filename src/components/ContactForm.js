@@ -63,7 +63,7 @@ const ContactForm = () => {
         <>
         <h4>Request A Quote</h4>
                             <p>
-                                Complete control over products allow us to our customers the best quality
+                                Complete control over products allow us to our customers the best quality <br />
                                 prices and services. We take great pride in everything that we do in Jhontraktor 
                             </p>
         <form onSubmit={handleSubmit}>

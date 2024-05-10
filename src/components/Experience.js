@@ -21,10 +21,10 @@ export default function Experience () {
                         <img src={image} alt="" style={{width:'100%'}}/>
                     </div>
                     <div  className="col-md-6 exp-section-right">
-                        <h2 className="yrs-heading">25 years</h2>
+                        <h2 className="yrs-heading">40 years</h2>
                         <h2 className="exp-heading">of experience!</h2>
                         <p>
-                        Welcome to Building Futures Renovations & Construction, where we specialize in
+                        Welcome to Greene Builders Renovations & Construction, where we specialize in
                          transforming spaces and building dreams. With our expertise in renovation and 
                          construction, we offer a wide range of services tailored to meet the diverse needs
                           of our clients. Whether you need residential renovations or a new custom
