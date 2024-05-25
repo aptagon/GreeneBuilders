@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import icon from '../assets/images/arrow-right-circle.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
-export default function Banner() {
+export default function Banner({ id }) {
     let spanStyle = {color: 'rgba(28, 42, 61, 1)', fontWeight: '600'};
     return (
         <>
-            <div className="container-fluid p-0" id="banner-section">
+            <div className="container-fluid p-0" id={ id }>
                 <div className="banner">
                     <div className="row">
                         <div className="col-lg-7 col-md-12">

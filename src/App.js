@@ -1,25 +1,30 @@
 import './App.css';
-import Banner from './components/Banner';
-import Navbar from './components/Navbar';
-import Experience from './components/Experience';
-import Services from './components/Services';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Blog from './components/Blog';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import BlogPage from './pages/BlogPage';
+import Home from './pages/Home';
+import InnerBlog from './pages/InnerBlog';
+import {useEffect, userEffect} from "react";
 
 function App() {
+  const ScrollTop = () => {
+    const {pathname} = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+    
+    return null;
+  }
   return (
-    <>
-      <Navbar />
-      <Banner />
-      <Experience />
-      <Services />
-      <Projects />
-      <Contact />
-      <Blog />
-      <Footer />
-    </>
+    <Router>
+      <ScrollTop />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/innerblog/:id" element={<InnerBlog />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

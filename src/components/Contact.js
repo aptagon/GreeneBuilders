@@ -1,9 +1,8 @@
-import icon from '../assets/images/tick.png';
 import ContactForm from "./ContactForm";
-export default function Contact () {
+export default function Contact ({id}) {
     return (
         <>
-            <div className="container-fluid contact" id="contact-section">
+            <div className="container-fluid contact" id={id}>
                 {/* <h3 className="text-center">Leading Way In Building & Civil Construction</h3>
                 <ul className="text-center">
                     <li><img src={icon} alt="" />Professional Staff</li>

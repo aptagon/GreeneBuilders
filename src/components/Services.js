@@ -1,8 +1,8 @@
 import btnIcon from '../assets/images/button-icon.png';
-export default function Services() {
+export default function Services({ id }) {
     return (
         <>
-            <div className="container services" id="services-section">
+            <div className="container services" id={ id }>
                 <h2 className="text-center pb-2">Services</h2>
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-12 service-one">

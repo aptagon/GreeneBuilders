@@ -1,11 +1,11 @@
 import CounterAnimation from "./CounterAnimation";
 import image from '../assets/images/image.png';
 import signature from '../assets/images/signature.png';
-export default function Experience () {
+export default function Experience ({ id }) {
     let rowStyle = {width: '100%'};
     return (
         <>
-            <div className="container-fluid p-0 experience-section" id="about-section">
+            <div className="container-fluid p-0 experience-section" id={ id }>
                 <div className="row" style={rowStyle}>
                     <div className="col-lg-7 col-md-12">
                         <div className="counter">

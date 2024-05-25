@@ -26,10 +26,10 @@ const data = [
       image: slide4
     }
   ];
-export default function Projects () {
+export default function Projects ({id}) {
     return (
         <>
-        <div className="container-fluid projects" id="projects-section">
+        <div className="container-fluid projects" id={id}>
             <SliderComp
                 autoplay={true}
                 autoplaySpeed={2000}
