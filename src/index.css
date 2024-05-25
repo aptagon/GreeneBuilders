@@ -701,8 +701,10 @@ hr {
   font-weight: 600;
 }
 .description-section h3 {
-  font-weight: 700;
   font-size: 32px;
+}
+.description-section h3, .description-section h2, .description-section h1, .description-section h4, .description-section h5, .description-section h6  {
+  font-weight: 700;
   color: rgba(34, 139, 34, 1);
 }
 .description-section img {

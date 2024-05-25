@@ -52,7 +52,7 @@ export default function BannerInnerBlog() {
         fetchPosts();
       }, [id]);
       useEffect(() => {
-        getPostsList(3, 1)
+        getPostsList(3, 0)
         .then(response => {
             setBlogsData(response.data);
         })
@@ -90,7 +90,7 @@ export default function BannerInnerBlog() {
             
             <div className="container-fluid  latest-blog">
             <div className="row all-blogs">
-                    <h2 className="fw-bold" style={blogsList}>All blogs</h2>
+                    <h2 className="fw-bold" style={blogsList}>Recent blogs</h2>
                     {blogData.map(post => (
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="card">
