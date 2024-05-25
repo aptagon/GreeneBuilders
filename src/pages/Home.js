@@ -13,7 +13,6 @@ const Home = () => {
 
     const { hash } = useLocation();
     useEffect(() => {
-        console.log('Current hash:', hash); // Log current hash
     if (hash) {
       const elementId = hash.replace('#', '');
       console.log('Element ID to scroll to:', elementId); // Log element ID

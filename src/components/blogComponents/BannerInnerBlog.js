@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import backgroundimage from "../../assets/images/inner-blog.png";
-import {Link, useParams} from "react-router-dom";
+import {Link, useParams, useNavigate} from "react-router-dom";
 import {getPostbyID, getPostsList} from "../../services/api";
 
 export default function BannerInnerBlog() {
@@ -13,6 +13,11 @@ export default function BannerInnerBlog() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [blogData, setBlogsData] = useState([]);
+    const navigate = useNavigate();
+
+    const handleDivClick = (id) => {
+        navigate(`/innerblog/${id}`); // Navigate to the desired route
+    };
 
     useEffect(() => {
         console.log('aaaa')
@@ -47,7 +52,7 @@ export default function BannerInnerBlog() {
         fetchPosts();
       }, [id]);
       useEffect(() => {
-        getPostsList(100, 1)
+        getPostsList(3, 1)
         .then(response => {
             setBlogsData(response.data);
         })
@@ -89,7 +94,7 @@ export default function BannerInnerBlog() {
                     {blogData.map(post => (
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="card">
-                                <div className="image-wrap">
+                                <div className="image-wrap" onClick={() => handleDivClick(post.id)} style={{cursor: 'pointer'}}>
                                     <img className="card-img-top" src={post.featured_image} />
                                 </div> 
                                 <div className="card-body">

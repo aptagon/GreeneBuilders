@@ -1,4 +1,4 @@
-import {Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import {getPosts, getPostsList} from "../services/api";
 
@@ -8,6 +8,11 @@ export default function Blog ({id}) {
     const [error, setError] = useState(null);
 
     const [blogData, setBlogsData] = useState([]);
+    const navigate = useNavigate();
+
+    const handleDivClick = (id) => {
+        navigate(`/innerblog/${id}`); // Navigate to the desired route
+    };
     useEffect(() => {
         getPosts(1)
           .then(response => {
@@ -23,7 +28,6 @@ export default function Blog ({id}) {
         getPostsList(3, 1)
         .then(response => {
             setBlogsData(response.data);
-            console.log("PostList"+response.data)
         })
       }, []);
       if (loading) return <p>Loading...</p>;
@@ -37,7 +41,7 @@ export default function Blog ({id}) {
                 <div className="row pt-4 pb-4">
                    
                    {latestPost.map(post => (
-                    <div className="col-md-5 blog-bg" style={{backgroundImage: `url(${post.featured_image})`}} key={post.id}>
+                    <div className="col-md-5 blog-bg" onClick={() => handleDivClick(post.id)} style={{backgroundImage: `url(${post.featured_image})`, cursor: 'pointer'}}>
                         <div className="text-bottom">
                             <h4 className="text-center"><Link to={"/innerblog/"+post.id} style={{color: 'white'}}>{post.title}</Link></h4>
                             <p className="text-center">See Our Latest Projects Come to Life</p>
@@ -49,7 +53,7 @@ export default function Blog ({id}) {
                     <div className="col-lg-7 col-md-12">
                     {blogData.map(post => (
                        <div className="row blog-info">
-                            <div className="col-md-3 image d-flex"><img src={post.featured_image} alt="" style={{width: '100%'}}/></div>
+                            <div className="col-md-3 image d-flex" onClick={() => handleDivClick(post.id)} ><img src={post.featured_image} alt="" style={{width: '100%', cursor: 'pointer'}}/></div>
                             <div className="col-md-9 info">
                                 <h5><Link to={"/innerblog/"+post.id}>{post.title}</Link></h5>
                                 <hr />

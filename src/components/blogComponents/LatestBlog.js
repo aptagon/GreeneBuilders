@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {getPosts, getPostsList} from "../../services/api";
 const LatestBlog = () => {
     const [latestPost, setLatestPost] = useState([]);
@@ -7,6 +7,11 @@ const LatestBlog = () => {
     const [error, setError] = useState(null);
     const [blogData, setBlogsData] = useState([]);
     const [visiblePosts, setVisiblePosts] = useState(6);
+    const navigate = useNavigate();
+
+    const handleDivClick = (id) => {
+        navigate(`/innerblog/${id}`); // Navigate to the desired route
+    };
     useEffect(() => {
         getPosts(1)
           .then(response => {
@@ -37,7 +42,7 @@ const LatestBlog = () => {
                 {latestPost.map(post => (
                     <>
                         <div className="col-md-6">
-                            <div className="latest-bg">
+                            <div className="latest-bg" onClick={() => handleDivClick(post.id)} style={{cursor: 'pointer'}}>
                                 <img src={post.featured_image} width="100%"/>
                             </div>
                         </div>
@@ -57,7 +62,7 @@ const LatestBlog = () => {
                     {blogData.slice(0, visiblePosts).map(post => (
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="card">
-                                <div className="image-wrap">
+                                <div className="image-wrap" onClick={() => handleDivClick(post.id)} style={{cursor: 'pointer'}}>
                                     <img className="card-img-top" src={post.featured_image} />
                                 </div> 
                                 <div className="card-body">
