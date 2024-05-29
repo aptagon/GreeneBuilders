@@ -9,7 +9,7 @@ export default function Experience ({ id }) {
                 <div className="row" style={rowStyle}>
                     <div className="col-lg-7 col-md-12">
                         <div className="counter">
-                            <h6><CounterAnimation targetNumber={25} duration={3000} />Years of <br/>Experience</h6>
+                            <h6><CounterAnimation targetNumber={40} duration={3000} />Years of <br/>Experience</h6>
                             <h6><CounterAnimation targetNumber={378} duration={3000} />Projects<br/> Completed</h6>
                             <h6><CounterAnimation targetNumber={69} duration={3000} />Winning <br/>Global Awards</h6>
                         </div>
