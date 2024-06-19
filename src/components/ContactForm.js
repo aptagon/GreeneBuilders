@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
+    name: '',
     email: '',
     phone: '',
     services: '',
@@ -15,47 +16,61 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch('https://api.hsforms.com/submissions/v3/integration/submit/45794914/ad201b1e-3da2-4258-a445-ad1b5c38d184', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          fields: [
-            {
-              name: 'firstname',
-              value: formData.firstName,
-            },
-            {
-              name: 'email',
-              value: formData.email,
-            },
-            {
-              name: 'phone',
-              value: formData.phone,
-            },
-            {
-              name: 'services',
-              value: formData.services,
-            },
-            {
-              name: 'message',
-              value: formData.message,
-            }
-          ],
-        }),
-      });
+    emailjs.send(
+      'service_r3sreim',
+      'template_1nosx0b',
+      formData,
+      'oIgG2V1yD_PdFdyB8'
+    )
+    .then((result) => {
+      console.log(result.text);
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '',phone: '',services: '', message: '' });
+    }, (error) => {
+      console.log(error.text);
+      alert('Failed to send the message, please try again.');
+    });
+    // try {
+    //   const response = await fetch('https://api.hsforms.com/submissions/v3/integration/submit/45794914/ad201b1e-3da2-4258-a445-ad1b5c38d184', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       fields: [
+    //         {
+    //           name: 'firstname',
+    //           value: formData.firstName,
+    //         },
+    //         {
+    //           name: 'email',
+    //           value: formData.email,
+    //         },
+    //         {
+    //           name: 'phone',
+    //           value: formData.phone,
+    //         },
+    //         {
+    //           name: 'services',
+    //           value: formData.services,
+    //         },
+    //         {
+    //           name: 'message',
+    //           value: formData.message,
+    //         }
+    //       ],
+    //     }),
+    //   });
 
-      if (response.ok) {
-        console.log('Form submitted successfully');
-        setSubmitted(true);
-      } else {
-        console.error('Failed to submit form');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+    //   if (response.ok) {
+    //     console.log('Form submitted successfully');
+    //     setSubmitted(true);
+    //   } else {
+    //     console.error('Failed to submit form');
+    //   }
+    // } catch (error) {
+    //   console.error('Error submitting form:', error);
+    // }
   };
   return (
     <div>
@@ -69,7 +84,7 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit}>
           <div className="row">
                 <div className="form-group col-md-6">
-                    <input type="text" className="form-control" name="name" value={formData.firstname} onChange={handleChange} placeholder="Name" required />
+                    <input type="text" className="form-control" name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
                 </div>
                 <div className="form-group col-md-6">
                     <input type="email" className="form-control" name="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
